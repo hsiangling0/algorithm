@@ -61,3 +61,5 @@ main(){
 	mergediv(number,0,amount-1);
 	cout<<ans;
 }
+
+//https://hackmd.io/q88EBYcmTOyjJwhvQsh_jw?view
