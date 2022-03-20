@@ -57,23 +57,4 @@ main(){
 	}
 }
 
-/*input
-10 10
-get 4
-set 4 4
-set 2 1
-get 4
-get 5
-set 2 3
-set 2 2
-get 3
-set 4 3
-get 2 */
-
-/*output
--1
-4
--1
--1
-2 */
-
+//https://hackmd.io/WWAFDVnZRpeC-SGuhRO9Fw 
