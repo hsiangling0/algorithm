@@ -46,3 +46,5 @@ main(){
 	heap(ans,amount);
 	print(ans);
 }
+
+//https://hackmd.io/HmMxR5nzSkia70DpB4f2tQ?view
