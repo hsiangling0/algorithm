@@ -63,3 +63,5 @@ main(){
 	
 	com(num,amount);
 }
+
+//https://hackmd.io/87TU9cdPR_qBgv3Zr0RuIw?view 
