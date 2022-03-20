@@ -80,26 +80,4 @@ main(){
 }
 
 
-/*input
-10 8
-pile 1 onto 1
-pile 8 over 6
-move 3 onto 5
-move 8 over 8
-move 4 onto 9
-pile 10 over 10
-move 9 onto 2
-pile 3 onto 7
-*/ 
-/*output
-1: 1
-2: 2 9
-3:
-4: 4
-5: 5
-6: 6 8
-7: 7 3
-8:
-9:
-10: 10
-*/
+//https://hackmd.io/q4S884U1Q36Tys2wQCCZoA 
