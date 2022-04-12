@@ -67,3 +67,5 @@ b 3 s 6
 10
 7
 */ 
+
+//https://hackmd.io/fM0fQhrnRnGXaItoEoDTOQ?view
