@@ -51,3 +51,5 @@ main(){
 /*output
 1
 */
+
+//https://hackmd.io/cLJP6VmdRgONP3UX1mD5wQ?view
