@@ -33,3 +33,14 @@ main(){
 	}
 	findMax(Val,Cost,amount,timeLimit);
 }
+
+/*input
+3 1440
+30 500
+30 600
+40 1000
+*/
+/*output
+60
+*/
+//https://hackmd.io/btapepKyRO2gzmXy3TaMaA
