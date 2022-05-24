@@ -66,3 +66,17 @@ main(){
 	cout<<"Fail!"<<endl;
 	
 }
+/*input
+5 5
+3 5 5 4
+0 1 0 0 1
+0 1 1 1 1
+0 0 1 1 1
+1 1 0 1 0
+0 1 1 1 1
+
+*/
+/*output
+Success!
+*/
+//https://hackmd.io/U__vE_IPSv2cF5Eqw-vaug
