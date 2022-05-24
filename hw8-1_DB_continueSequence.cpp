@@ -44,3 +44,4 @@ main(){
 /*output
 7 1 6
 */
+//https://hackmd.io/EEqS4ZdgQgC_4wBzArJS-w
