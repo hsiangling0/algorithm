@@ -18,7 +18,7 @@ main(){
 			if(dir==2)airplane[to][from]=true;
 		}
 		visit[1]=true;
-		for(int i=2;i<=place;i++){    //¥ý±qÂI1°µBFS 
+		for(int i=2;i<=place;i++){    //å…ˆå¾žé»ž1åšBFS 
 			if(airplane[1][i]){
 				re.push(i);
 				visit[i]=true;
@@ -37,7 +37,7 @@ main(){
 			}
 		}
 		memset(visit,0,sizeof(visit));	
-		if(time1!=place){               //½T»{±qÂI1¬O§_¥i¨«¨ì©Ò¦³ÂI 
+		if(time1!=place){               //ç¢ºèªå¾žé»ž1æ˜¯å¦å¯èµ°åˆ°æ‰€æœ‰é»ž 
 			cout<<"0"<<endl;
 			cin>>place>>line;
 			memset(airplane,0,sizeof(airplane));
@@ -45,7 +45,7 @@ main(){
 			continue;
 		}	
 		visit[1]=true;
-		for(int i=2;i<=place;i++){    //±qÂI1¦b¬Û¤Ï¹Ï°µBFS(¬Û¤Ï¹Ï¥Nªí¸ô½u¤è¦VÄA­Ë) ¡A­Y¥i¥H«h¥Nªí±q¨ä¥LÂI³£¥i¥H¨«¨ì1 
+		for(int i=2;i<=place;i++){    //å¾žé»ž1åœ¨ç›¸ååœ–åšBFS(ç›¸ååœ–ä»£è¡¨è·¯ç·šæ–¹å‘é¡›å€’) ï¼Œè‹¥å¯ä»¥å‰‡ä»£è¡¨å¾žå…¶ä»–é»žéƒ½å¯ä»¥èµ°åˆ°1 
 			if(airplane[i][1]){
 				re.push(i);
 				visit[i]=true;
@@ -63,7 +63,7 @@ main(){
 				}
 			}
 		}
-		if(time2==place){     //½T»{¬O§_¤´¥i¥H¨«¨ì©Ò¦³ÂI 
+		if(time2==place){     //ç¢ºèªæ˜¯å¦ä»å¯ä»¥èµ°åˆ°æ‰€æœ‰é»ž 
 			cout<<"1"<<endl;
 		}
 		else{
@@ -96,3 +96,4 @@ main(){
 0
 */
 
+//https://hackmd.io/oPC6R7rbTemCC3MFEwVimQ
