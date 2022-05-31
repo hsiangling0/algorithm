@@ -1,5 +1,4 @@
 #include <iostream>
-#include <queue>
 #include <array>
 #include <vector>
 #include <algorithm>
@@ -23,15 +22,15 @@ void dfs(int u,bool visit[],int depth[], int low[],int parent[], int curdepth,ve
 			parent[v]=u;
 			child++;
 			dfs(v,visit,depth,low,parent,curdepth+1,ans,connect);
-			low[u]=min(low[u],low[v]);                //·íuªº¤l®]¥i¨ì¹Fªº²`«×¤p©óu¥i¨ì¹Fªº¡A§ó§ïlow[u] 
-			if(parent[u]==-1&&child>1){               //­Yu¬ODFS¾ğªºroot¡A¥B¾Ö¦³¨â­Ó¥H¤Wªº¤p«Ä¡Au¬°Ãö¸`ÂI 
+			low[u]=min(low[u],low[v]);                //ç•¶uçš„å­å­«å¯åˆ°é”çš„æ·±åº¦å°æ–¼uå¯åˆ°é”çš„ï¼Œæ›´æ”¹low[u] 
+			if(parent[u]==-1&&child>1){               //è‹¥uæ˜¯DFSæ¨¹çš„rootï¼Œä¸”æ“æœ‰å…©å€‹ä»¥ä¸Šçš„å°å­©ï¼Œuç‚ºé—œç¯€é» 
 				ans[u].second++;
 			}
-			if(parent[u]!=-1 &&low[v]>=depth[u]){    //­Yu¤£¬Oroot¡A¦ı¨ä«Ä¤l(v)µLªkÂ¶¹Lu±µÄ²uªº¯ª¥ı¡Au¬°Ãö¸`ÂI 
+			if(parent[u]!=-1 &&low[v]>=depth[u]){    //è‹¥uä¸æ˜¯rootï¼Œä½†å…¶å­©å­(v)ç„¡æ³•ç¹éuæ¥è§¸uçš„ç¥–å…ˆï¼Œuç‚ºé—œç¯€é» 
 				ans[u].second++;
 			}
 		}
-		//­Yv¤w¸g¨«¹L¡A¥Nªív¬Ouªº¯ª¥ı¡A­Yv¤£¬Ouªºparent(parent¨S¦³§ó·sªº¥²­n)¡A«hªí¥Ü¦³¤@±ø¥i¨«v¨ì¯ª¥ıªº¸ô 
+		//è‹¥vå·²ç¶“èµ°éï¼Œä»£è¡¨væ˜¯uçš„ç¥–å…ˆï¼Œè‹¥vä¸æ˜¯uçš„parent(parentæ²’æœ‰æ›´æ–°çš„å¿…è¦)ï¼Œå‰‡è¡¨ç¤ºæœ‰ä¸€æ¢å¯èµ°våˆ°ç¥–å…ˆçš„è·¯ 
 		else if(parent[u]!=v){     
 			low[u]=min(low[u],depth[v]);
 		}
@@ -48,8 +47,8 @@ main(){
 	vector<pair<int,int>> ans; 
 	bool *visit=new bool[city];
 	int *parent=new int[city]; 
-	int *low=new int[city];      //low[u]¬°u»P¨ä¤l®]¤¤¯à¨ì¹Fªº³Ì¤p²`«× 
-	int *depth=new int[city];   //depth[u]¬°u¦bDFS¾ğ¤¤ªº²`«× 
+	int *low=new int[city];      //low[u]ç‚ºuèˆ‡å…¶å­å­«ä¸­èƒ½åˆ°é”çš„æœ€å°æ·±åº¦ 
+	int *depth=new int[city];   //depth[u]ç‚ºuåœ¨DFSæ¨¹ä¸­çš„æ·±åº¦ 
 	for(int i=0;i<city;i++){
 		ans.push_back({i,1});
 		visit[i]=false;
@@ -92,3 +91,5 @@ main(){
 4 2
 0 1
 */
+
+//https://hackmd.io/n6grE8l2QnmRx2zqfPFu2g
