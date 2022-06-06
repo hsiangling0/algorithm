@@ -49,7 +49,7 @@ void Kruskal(vector<struct road> &edge,int V){
 		to=it->v2;
 		rfrom=find(parent,from);
 		rto=find(parent,to);
-		if(rfrom!=rto){
+		if(rfrom!=rto){                       //確認會不會造成circle
 			ans+=it->length;
 			selected++;
 			mergeset(parent,rfrom,rto);
@@ -87,3 +87,16 @@ main(){
 	sort(edge.begin(),edge.end(),compare);
 	Kruskal(edge,V);
 }
+
+/*input
+5
+0 0
+2 2
+3 10
+5 2
+7 0
+*/
+
+/*output
+20
+*/
