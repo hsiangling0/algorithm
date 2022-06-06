@@ -93,3 +93,16 @@ main(){
 	sort(edge.begin(),edge.end(),compare);
 	Kruskal(edge,V);
 }
+
+/*input
+4
+aaaaaaa
+baaaaaa
+abaaaaa
+aabaaaa
+0
+*/
+/*output
+The highest possible quality is 1/3.
+*/
+//https://hackmd.io/xTSDXIj5QRyC8UMl1YbE5A
