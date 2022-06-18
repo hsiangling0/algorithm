@@ -57,3 +57,14 @@ main(){
 	}
 	findMax(question,amount);
 }
+
+
+/*input
+8
+7 21 16 19 16 7 12 5
+*/
+/*output
+2
+*/
+
+//https://hackmd.io/Id2yA6b0TU6fJUzfQqvQXg
