@@ -64,7 +64,7 @@ main(){
 }
 
 /*input
-3(´ú¸ê¼Æ) 
+3(test amount) 
 aabce (s string) 
 ace (t string)
 abacaba
